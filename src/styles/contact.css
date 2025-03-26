@@ -1,0 +1,111 @@
+.contact-section{
+    scroll-margin-top: 80px;
+    height: 100vh;
+    margin: 1rem 0;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    text-align: start;
+    font-family: Poppins, sans-serif;
+}
+
+#contact-form input{
+    background-color: initial;
+    color: rgb(85, 85, 85);
+    display: block;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    width: 100%;
+    border-style: solid;
+    border-color: rgb(219, 219, 219);
+    border-image: initial;
+    border-width: 0px 0px 2px;
+}
+
+#contact-form textarea {
+    background-color: initial;
+    color: rgb(85, 85, 85);
+    display: block;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 80px;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    resize: none;
+    width: 100%;
+    border-style: solid;
+    border-color: rgb(219, 219, 219);
+    border-image: initial;
+    border-width: 0px 0px 2px;
+}
+
+#contact-form button {
+    background-color: initial;
+    border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    width: auto;
+    border-style: none none solid;
+    border-image: initial;
+    border-bottom: 2px solid rgb(85, 85, 85);
+    padding: 5px 10px;
+    text-align: start;
+}
+
+#contact-form textarea:focus,
+#contact-form input:focus,
+#contact-form button:focus {
+    border-style: none none solid;
+    outline: none;
+    border-color: rgb(85, 85, 85);
+}
+
+.contact-title{
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+.quick-label{
+    font-family: Poppins, sans-serif;
+    font-size: 0.7rem;
+}
+.quick-label-2{
+    font-family: Poppins, sans-serif;
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+.sent{
+    color: white;
+    font-family: Poppins, sans-serif;
+    background-color: green;
+    border-radius: 10px;
+    align-items: center;
+    text-transform: uppercase;
+    align-content: center;
+    padding: 0.5rem;
+    width: 4rem;
+}

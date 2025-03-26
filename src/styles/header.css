@@ -1,0 +1,35 @@
+/* src/components/Header.css */
+.header {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #c3c3c3;
+  font-family: Poppins, sans-serif;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-link {
+  color: #555;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 30px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  transition: .4s;
+  text-decoration: none
+}
+
+.nav-link:hover {
+  font-weight: bolder;
+}
+.nav-link:focus-visible {
+  font-weight: bolder;
+}

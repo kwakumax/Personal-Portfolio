@@ -1,0 +1,74 @@
+.about-section {
+    scroll-margin-top: 80px;
+    height: 100vh;
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    text-align: start;
+    font-family: Poppins, sans-serif;
+}
+
+.about-left h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.about-left p {
+    text-decoration: none !important;
+}
+
+.about-left h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: start;
+    margin: 0.5rem 0;
+}
+
+
+.about-left p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* .about-right img { */
+/* Feather left and right sides */
+/* -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 5%, black 38%, black 59%, transparent 98%); */
+
+/* Optional for smoother transition */
+/* -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; */
+/* } */
+
+.about-right img {
+    border-radius: 5rem;
+
+    /* Combine two gradients: one horizontal (left-right) and one vertical (top-bottom) */
+    -webkit-mask-image:
+        linear-gradient(to right, transparent 5%, black 38%, black 59%, transparent 98%),
+        linear-gradient(to bottom, transparent 5%, black 38%, black 59%, transparent 98%);
+    mask-image:
+        linear-gradient(to right, transparent 5%, black 38%, black 59%, transparent 98%),
+        linear-gradient(to bottom, transparent 5%, black 38%, black 59%, transparent 98%);
+
+    -webkit-mask-composite: intersect;
+    mask-composite: intersect;
+    /* Firefox */
+
+    /* Optional */
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
