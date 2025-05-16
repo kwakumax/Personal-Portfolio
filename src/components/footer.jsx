@@ -6,7 +6,7 @@ import '../styles/hero.css'
 const Footer = () => {
     return (
         <div>
-            <div className="grid">
+            <div className="grid m-0">
                 <p className="text-sm col-12 text-center">
                     &copy; {new Date().getFullYear()} <span className="footer-style">Amankwah Amoako. All Rights Reserved.</span>
                 </p>

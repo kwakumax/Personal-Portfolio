@@ -15,7 +15,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }} // trigger when 50% visible
-            transition={{ duration: 1, ease: "easeOut" }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
         >
             {content}
         </motion.div>

@@ -1,23 +1,28 @@
-import React,{useState, useEffect} from 'react'
+import React, { useEffect } from 'react'
 import '../styles/contact.css'
+import { toast, Toaster } from 'sonner';
+import { Button } from 'primereact/button';
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-  const [sent, setSent] = useState(false);
   const [state, handleSubmit] = useForm("manendno");
 
   useEffect(() => {
-    if (state.submitting) {
-      setSent(true);
-    }else{
-      setSent(false);
+    if (state.succeeded) {
+      toast.success('Message Sent!', {
+        duration: 3000, // 3 seconds
+        onAutoClose: () => {
+          window.location.reload(); // refresh the page
+        }
+      });
+
     }
-  }, [state.submitting]);
- console.log('state:', state);
- 
+  }, [state.succeeded]);
+
 
   return (
     <div className="contact-section">
+      <Toaster position="top-right" richColors />
       <div id='contact' className="grid mt-6">
         <div className="col-12 md:col-12 lg:col-12">
           <h2 className="contact-title mb-4">CONTACT FORM</h2>
@@ -47,15 +52,14 @@ const Contact = () => {
               field="message"
               errors={state.errors}
             />
-            <button
+            <Button
               type="submit"
               className='cursor-pointer'
-              // loading={state.submitting}
+              loading={state.submitting}
             >
-              {state.submitting? 'Loading...' : sent? "Sent" : "Send"}
-            </button>
+              {"Send"}
+            </Button>
           </form>
-          {/* {sent && <p className='sent'>sent</p>} */}
 
         </div>
 

@@ -1,13 +1,18 @@
 /* In your CSS file */
 html {
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .app-wrapper {
     display: flex;
     flex-direction: column;
-    padding: auto;
-    min-height: 100vh; /* full height of viewport */
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    min-height: 100vh;
   }
   
   .content {
@@ -18,4 +23,5 @@ html {
     background-color: #f0f0f0;
     padding: 0.5rem;
     text-align: center;
+    width: 100%;
   }

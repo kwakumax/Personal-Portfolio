@@ -7,9 +7,6 @@ const About = () => {
     <div>
       <section className="about-section">
         <div id="about" className='grid about'>
-          {/* <div className='col-12 md:col-6 lg:col-6 about-right'>
-            <img src={aboutme} alt="Amoako Amankwah" />
-          </div> */}
           <div className="col-12 md:col-6 lg:col-6 about-right flex items-center justify-content-center">
             <img src={aboutme} alt="Amoako Amankwah" style={{ maxWidth: '70%', maxHeight: '100%', objectFit: 'contain'}} />
           </div>

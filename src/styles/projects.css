@@ -1,8 +1,9 @@
 /* src/components/Projects.css */
 .projects-section {
   scroll-margin-top: 80px;
-  height: 100vh;
-  padding: 40px;
+  /* height: 95vh; */
+  /* padding: 40px; */
+  padding: 0 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,16 +14,25 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  height: 80vh;
+}
+.proj-title{
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
 }
 
 .project-card {
   flex: 1 1 300px;
   padding: 15px;
   border: 1px solid #ddd;
-  /* border-radius: 0 1.5rem; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-end;
 }
-.project-style{
+
+.project-style {
   font-family: Poppins;
   font-size: 20px;
 }

@@ -1,6 +1,5 @@
 .hero {
     height: 100vh;
-    background-color: #efefef;
 }
 
 
@@ -35,12 +34,6 @@
     cursor: pointer;
 }
 
-/* .hero-right img {
-    width: 100%;
-    height: 85%;
-    object-fit: cover;
-    object-position: center;
-} */
 .footer-style{
     font-family: Poppins;
     font-size: small;

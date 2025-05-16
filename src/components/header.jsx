@@ -8,7 +8,7 @@ const Header = () => {
     <Link
       to={id}
       smooth={true}
-      duration={300}
+      duration={100}
       offset={-80}
       className="cursor-pointer"
     >
@@ -17,14 +17,14 @@ const Header = () => {
   );
 
   return (
-    <header className="header">
+    <div className="">
       <nav className="nav col-12">
         <NavLink id="home" label="Home" />
         <NavLink id="projects" label="Projects" />
         <NavLink id="about" label="About" />
         <NavLink id="contact" label="Contact" />
       </nav>
-    </header>
+   </div>
   )
 };
 
