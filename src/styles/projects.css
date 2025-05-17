@@ -1,7 +1,7 @@
 /* src/components/Projects.css */
 .projects-section {
   scroll-margin-top: 80px;
-  /* height: 95vh; */
+  height: 100vh;
   /* padding: 40px; */
   padding: 0 40px;
   display: flex;

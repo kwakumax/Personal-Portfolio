@@ -13,8 +13,8 @@ const Projects = () => {
         // { id: 3, title: 'Reveknew', BackColor: '#d0021b', color: '#fff', border: "0 1.5rem", animate: "flip-right", description: 'A subscription management webapp, where I work as an front-end developer' },
 
     ];
-    return (<div  id="projects">
-        <div className='flex justify-content-center align-items-center proj-title'>Projects</div>
+    return (<div className='mt-2'>
+        <div id="projects" className='flex justify-content-center align-items-center proj-title'>Projects</div>
         <section className="projects-section">
             <div className="projects-container">
                 {projects.map(({ id, title, description, BackColor, color, border, animate }) => (
